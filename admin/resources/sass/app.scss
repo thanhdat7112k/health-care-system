@@ -1,0 +1,139 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// Variables
+@import 'variables';
+
+//Bulma
+@import './custom-bulma.sass';
+
+// Material design icon
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+:root {
+    --line-height: 1.2rem;
+    --primary-color: #{$bs-yellow};
+}
+
+body {
+    line-height: 1 !important;
+}
+
+.bs-bg-yellow {
+    background-color: $bs-yellow !important;
+}
+
+.bs-bg-lighter-gray {
+    background-color: $bs-lighter-gray !important;
+}
+
+.bs-bg-light-gray {
+    background-color: $bs-light-gray !important;
+}
+
+.bs-bg-white {
+    background-color: $bs-white !important;
+}
+
+.bs-text-yellow {
+    color: $bs-yellow !important;
+}
+
+.bs-text-pink {
+    color: $bs-pink !important;
+}
+
+.bs-text-dark-gray {
+    color: $bs-dark-gray !important;
+}
+
+.bs-text-light-gray {
+    color: $bs-light-gray !important;
+}
+
+.bs-text-shadow-gray {
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bs-border-pink {
+    border: 1px solid $bs-pink !important;
+}
+
+.bs-border-light-gray {
+    border: 1px solid $bs-light-gray !important;
+}
+
+.bs-border-bold-light-gray {
+    border: 3px solid $bs-light-gray !important;
+}
+
+.bs-border-bold-yellow {
+    border: 3px solid $bs-yellow !important;
+}
+
+.bs-border-bold-pink {
+    border: 3px solid $bs-pink !important;
+}
+
+.bs-border-radius-10 {
+    border-radius: 10px !important;
+}
+
+.bs-border-radius-15 {
+    border-radius: 15px !important;
+}
+
+.bs-is-size-0-5 {
+    font-size: 4rem;
+}
+
+.bs-is-size-2-5 {
+    font-size: 2.25rem;
+}
+
+.bs-large-icon {
+    font-size: 5.5rem;
+}
+
+.bs-btn {
+    border-radius: 10px !important;
+}
+
+.bs-py-5-5 {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+}
+
+.bs-px-5-5 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+}
+
+.bs-letter-spacing {
+    letter-spacing: 0.2em;
+}
+
+.slick-slider > .slick-list {
+    width: 100%;
+}
+
+.margin-list-1-items {
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+@media screen and (min-width: 576px) {
+    .margin-list-2-items {
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .margin-list-3-items {
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+}
+
+

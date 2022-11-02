@@ -1,0 +1,27 @@
+.label-required::after {
+    content: "\203B";
+    color: #ff4e7b;
+    font-size: 11px
+}
+
+.change-image-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+}
+
+.image-preview {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0.25rem;
+}
+
+.card--empty {
+    background: url(/front/images/vendor/images-regular.svg) center no-repeat;
+}
+
+.sidebar {
+    margin-top: 100px !important;
+}

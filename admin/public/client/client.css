@@ -1,0 +1,798 @@
+/*
+ * ログ
+ */
+.brand-image--center {
+    max-width: 50px;
+    margin-left: auto !important;
+    margin-top: .2rem !important;
+}
+
+.brand-image-xs--center {
+    max-width: 210px;
+    margin-top: auto !important;
+}
+
+/*
+ * 左のサイドバー
+ */
+.main-sidebar--client {
+    background-color: white;
+}
+
+.sidebar--client {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-sidebar .nav-item .nav-link--client {
+    color: #999999;
+}
+
+.navbar-nav .nav-item .nav-link--client {
+    color: #999999;
+}
+
+.nav-sidebar--client .nav-item {
+    height: 3.5rem;
+    border-bottom: 1px solid #ffc903;
+}
+
+.nav-sidebar--client .nav-link--client {
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+.nav-sidebar--client .nav-link--client p {
+    margin-left: 1rem !important;
+}
+
+.nav-link--client:not(.active):hover {
+    color: #ffc903 !important;
+}
+
+.nav-item .nav-link--client.active {
+    color: #ffc903;
+    background-color: transparent;
+}
+
+/* アイコン */
+.nav-link--client .menu-icon {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 2px;
+}
+
+/* サイドバー: 新規予約アイコン */
+.menu-icon__write {
+    background-image: url('/img/icon.png');
+}
+
+.nav-link--client:hover .menu-icon__write {
+    background-image: url('/img/icon_yellow.png');
+}
+
+.active .menu-icon__write {
+    background-image: url('/img/icon_yellow.png');
+}
+
+/* サイドバー: 予約一覧アイコン */
+.menu-icon__list {
+    background-image: url('/img/icon_2.png');
+}
+
+.nav-link--client:hover .menu-icon__list {
+    background-image: url('/img/icon_2_yellow.png');
+}
+
+.active .menu-icon__list {
+    background-image: url('/img/icon_2_yellow.png');
+}
+
+/* サイドバー: 請求書・領収書アイコン */
+.menu-icon__sheet {
+    background-image: url('/img/icon_3.png');
+}
+
+.nav-link--client:hover .menu-icon__sheet {
+    background-image: url('/img/icon_3_yellow.png');
+}
+
+.active .menu-icon__sheet {
+    background-image: url('/img/icon_3_yellow.png');
+}
+
+/* サイドバー: 施設アイコン */
+.menu-icon__facility {
+    background-image: url('/img/icon_4.png');
+}
+
+.nav-link--client:hover .menu-icon__facility {
+    background-image: url('/img/icon_4_yellow.png');
+}
+
+.active .menu-icon__facility {
+    background-image: url('/img/icon_4_yellow.png');
+}
+
+/* サイドバー: 利用者アイコン */
+.menu-icon__customer {
+    background-image: url('/img/icon_5.png');
+}
+
+.nav-link--client:hover .menu-icon__customer {
+    background-image: url('/img/icon_5_yellow.png');
+}
+
+.active .menu-icon__customer {
+    background-image: url('/img/icon_5_yellow.png');
+}
+
+/* サイドバー: 問い合わせアイコン */
+.menu-icon__mail {
+    background-image: url('/img/icon_6.png');
+}
+
+.nav-link--client:hover .menu-icon__mail {
+    background-image: url('/img/icon_6_yellow.png');
+}
+
+.active .menu-icon__mail {
+    background-image: url('/img/icon_6_yellow.png');
+}
+
+/*
+ * 上のナビバー
+ */
+.navbar__border--client {
+    border-bottom: 1px solid #e3e3e3 !important;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important
+}
+
+.nav-item__username {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* ページ共通 */
+
+.content-header h1 span {
+    font-size: 1rem;
+    margin-left: 2rem;
+    font-weight: normal;
+}
+
+.content label {
+    font-size: 1.2rem;
+}
+
+.content label span {
+    font-size: 1rem;
+    margin-left: 2rem;
+    font-weight: normal;
+}
+
+.content label ~ span {
+    font-size: 1rem;
+    margin-left: 2rem;
+    font-weight: normal;
+}
+
+.datepicker-days .active.day {
+    background-image: none;
+    background-color: #ffc903 !important;
+    color: white;
+    text-shadow: none;
+}
+
+.datepicker-days .active.day:hover {
+    background-image: none;
+    background-color: #ffe381 !important;
+    color: white;
+    text-shadow: none;
+}
+
+/*
+ * TOP画面
+ */
+
+.top-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: #656565;
+    background-color: white;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+}
+
+.top-card:hover {
+    color: white;
+    background-color: #ffc903;
+}
+
+.top-card p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.top-icon {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* TOP: 新規予約アイコン */
+.top-icon__write {
+    background-image: url('/img/icon_yellow.png');
+}
+
+.gray-icon__write {
+    background-image: url('/img/icon.png');
+}
+
+/* TODO: white */
+.top-card:hover .top-icon__write {
+    background-image: url('/img/icon.png');
+}
+
+/* TOP: 予約一覧アイコン */
+.top-icon__list {
+    background-image: url('/img/icon_2_yellow.png');
+}
+
+/* TODO: white */
+.top-card:hover .top-icon__list {
+    background-image: url('/img/icon_2.png');
+}
+
+/* TOP: 請求書・領収書アイコン */
+.top-icon__sheet {
+    background-image: url('/img/icon_3_yellow.png');
+}
+
+/* TODO: white */
+.top-card:hover .top-icon__sheet {
+    background-image: url('/img/icon_3.png');
+}
+
+/* TOP: 施設アイコン */
+.top-icon__facility {
+    background-image: url('/img/icon_4_yellow.png');
+}
+
+/* TODO: white */
+.top-card:hover .top-icon__facility {
+    background-image: url('/img/icon_4.png');
+}
+
+/* TOP: 利用者アイコン */
+.top-icon__customer {
+    background-image: url('/img/icon_5_yellow.png');
+}
+
+/* TODO: white */
+.top-card:hover .top-icon__customer {
+    background-image: url('/img/icon_5.png');
+}
+
+/* TOP: 問い合わせアイコン */
+.top-icon__mail {
+    background-image: url('/img/icon_6_yellow.png');
+}
+
+/* TODO: white */
+.top-card:hover .top-icon__mail {
+    background-image: url('/img/icon_6.png');
+}
+
+/*
+ * 新規予約
+ */
+
+.multi-step {
+    padding-left: 0;
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+}
+
+.multi-step__warp {
+    width: 33%;
+    height: 40px;
+    background-color: #ffe381;
+    margin: 0 1rem;
+    position: relative;
+}
+
+.current.multi-step__warp,
+.current.multi-step__warp:before,
+.current.multi-step__warp:after {
+    background-color: #ffcd15;
+}
+
+.multi-step__warp:before,
+.multi-step__warp:after {
+    content: '';
+    width: 104%;
+    height: 20px;
+    background-color: #ffe381;
+    position: absolute;
+    z-index: 1;
+}
+
+.multi-step__warp:before {
+    transform: skew(30deg);
+    top: 0;
+}
+
+.multi-step__warp:after {
+    transform: skew(-30deg);
+    bottom: 0;
+}
+
+.multi-step__warp:nth-child(1) {
+    margin-left: 0;
+}
+
+.multi-step__warp:nth-child(1):before,
+.multi-step__warp:nth-child(1):after {
+    left: 2%;
+}
+
+.multi-step__warp:nth-child(2):before,
+.multi-step__warp:nth-child(2):after {
+    left: -2%;
+}
+
+.multi-step__warp:nth-child(3) {
+    margin-right: 0;
+}
+
+.multi-step__warp:nth-child(3):before,
+.multi-step__warp:nth-child(3):after {
+    left: -6%;
+}
+
+.multi-step__title {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/* サーチカード */
+
+.card--search .card-header {
+    border-bottom: none;
+}
+
+.card--search .card-header .card-title {
+    border-left: 3px solid #ffc903;
+}
+
+.card--search .card-body label.col-form-label {
+    color: #999999;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.card--search .card-body button {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+/* 結果カード */
+
+.card--result {
+    background-color: #f4f4f4;
+}
+
+.card--result .card-footer {
+    background-color: transparent;
+}
+
+.card--result .btn {
+    color: #ffffff;
+    background-color: #ffc903;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 3rem;
+}
+
+/* 結果テーブル */
+
+.card--result table {
+    background-color: #ffffff;
+}
+
+.card--result table .operations {
+    justify-content: center;
+}
+
+/* 結果アイテム */
+
+.result-item {
+    position: relative;
+}
+
+.result-item__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.result-item__checkbox {
+    height: 1rem;
+    width: 1rem;
+    background-color: #f4f4f4;
+    border: 1px #c4c4c4 solid;
+    border-radius: 4px;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.result-item__input:checked + .result-item__label .result-item__checkbox {
+    background-color: #ffc903;
+}
+
+.result-item__checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 0.3rem;
+    bottom: 0.1rem;
+    width: .4rem;
+    height: .8rem;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.result-item__input:checked + .result-item__label .result-item__checkbox:after {
+    display: block;
+}
+
+.result-item__label {
+    display: block;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    height: 3rem;
+    margin-bottom: .5rem;
+    background-color: white;
+    border: 1px rgba(0, 0, 0, .1) solid;
+    border-radius: 4px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1);
+}
+
+.result-item__input:checked + .result-item__label {
+    background-color: #ffe381;
+    border: 2px #ffc903 solid;
+}
+
+.result-item__left {
+    font-weight: normal !important;
+    font-size: 1rem !important;
+    margin: 0 !important;
+    position: absolute;
+    left: 3rem;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.result-item__right {
+    font-weight: normal !important;
+    font-size: 1rem !important;
+    margin: 0 !important;
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/* ページネーション */
+
+.pagination--client .page-item {
+    margin-left: 1.5rem;
+}
+
+.pagination--client .page-item:first-child {
+    margin-left: 0;
+}
+
+.pagination--client .page-item .page-link {
+    color: #999999;
+    background-color: transparent;
+    border-radius: 50% !important;
+    border-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+}
+
+.pagination--client .page-item:first-child .page-link {
+    background-color: #fcfcfc;
+    padding-top: .4rem;
+    border: #c4c4c4 1px solid;
+}
+
+.pagination--client .page-item:last-child .page-link {
+    background-color: #fcfcfc;
+    padding-top: .4rem;
+    border: #c4c4c4 1px solid;
+}
+
+.pagination--client .page-item.active .page-link {
+    background-color: #ffffff;
+}
+
+/* 予約日 */
+
+.reservation-date {
+    width: 100%;
+    background-color: #ffffff;
+    line-height: 2.5rem;
+    font-size: larger;
+    padding-left: 1rem;
+    border-radius: 4px;
+    margin-bottom: 0;
+}
+
+.reservation-description {
+    height: 5rem !important;
+    resize: none;
+}
+
+.reservation-customer {
+    background-color: white;
+    min-height: 10rem;
+    margin-bottom: .5rem;
+    border: #c4c4c4 1px solid;
+    border-radius: 8px;
+    border-left: #999999 8px solid;
+}
+
+.reservation-customer.active {
+    border-left: #ffc903 8px solid;
+}
+
+.reservation-customer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservation-customer > div:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+.reservation-customer > div:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.reservation-customer > div:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    justify-content: space-evenly;
+}
+
+.reservation-customer .reservation-customer__title {
+    position: absolute;
+    color: #999999;
+    font-size: small;
+    line-height: 2rem;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.reservation-customer .reservation-customer__center {
+    font-size: large;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.reservation-customer .reservation-customer__center.small {
+    font-size: small;
+}
+
+.reservation-customer .reservation-customer__menu {
+    margin-top: 2rem;
+    padding: 0 .5rem;
+    width: 100%;
+    list-style: none;
+}
+
+.reservation-customer .reservation-customer__menu > li {
+    margin-top: 0.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn--edit {
+    width: 70% !important;
+    box-shadow: none !important;
+    color: #343a40 !important;
+}
+
+.btn--remove {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    color: #dc3545 !important;
+}
+
+.btn--cancel {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    color: #c4c4c4 !important;
+}
+
+.btn--confirm {
+    color: #ffffff !important;
+    background-color: #ffc903 !important;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1) !important;
+    width: 100% !important;
+    border-radius: 3rem !important;
+}
+
+/* Modal */
+
+.modal--select-menu .modal-content .modal-header,.modal-body,.modal-footer {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.modal--select-menu .modal-header {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+}
+
+.modal--select-menu .modal-header .close {
+    position: absolute;
+    right: -2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.modal--select-menu .modal-header .customer-name {
+    width: 100%;
+    height: 3rem;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #999999;
+}
+
+.modal--select-menu .modal-header .input-title {
+    align-self: baseline;
+    margin-bottom: 0;
+}
+
+.modal--select-menu .modal-footer {
+    justify-content: center;
+    border-top: none;
+}
+
+.modal--select-menu .modal-footer .input-area {
+    width: 100%;
+    margin: 0;
+}
+
+.modal--select-menu .modal-footer .customer-description {
+    height: 5rem !important;
+    resize: none;
+}
+
+.modal--select-menu .modal-footer .button-area {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.modal--select-menu .modal-body {
+    background-color: #f4f4f4;
+}
+
+.modal--select-menu .menu-list {
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.modal--select-menu .menu-list li {
+    margin-left: 1rem;
+}
+
+.modal--select-menu .menu-list li:first-child {
+    display: flex;
+    height: 3rem;
+    border-left: #ffc903 1rem solid;
+    background-color: #ffffff;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    align-items: center;
+}
+
+/* Spinner */
+
+.spinner {
+    display: none;
+}
+
+.spinner .fa-spinner {
+    position: absolute;
+    left: 55%;
+    top: 50%;
+}
+
+.modal--spinner {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal--spinner .modal-dialog {
+    display: table;
+    position: relative;
+    margin: 0 auto;
+    top: calc(50% - 24px);
+}
+
+.modal--spinner .modal-dialog .modal-content {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Table */
+.table--result tbody tr td .btn {
+    border-radius: 1rem;
+    width: 25%;
+}
+
+/* Checkbox */
+.checkbox--big {
+    width: 18px;
+    height: 18px;
+}
+
+/* ご利用者 */
+.content-header .container-fluid .row .col-6 .float-right button {
+    border-radius: 1rem;
+}
+
+.card .card-footer button {
+    border-radius: 3rem;
+}
+
+.card .card-body .form-group button {
+    border-radius: 1rem;
+}

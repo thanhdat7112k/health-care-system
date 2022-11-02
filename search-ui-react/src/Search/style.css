@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+body {
+    background-image: url("/public/bgimage.jpg");
+    background-color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.height {
+    height: 70vh;
+}
+
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+
+}
+
+.search input {
+
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4;
+
+
+}
+
+
+.search input:focus {
+
+    box-shadow: none;
+    border: 2px solid blue;
+
+
+}
+
+.search .fa-search {
+
+    position: absolute;
+    top: 20px;
+    left: 16px;
+
+}
+
+.search button {
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: blue;
+
+}
+
+#e-search{
+    width: 80%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid blue;
+    border-radius: 13px;
+    height: 70vh;
+}
+
+#imageTutorial{
+    width: -webkit-fill-available
+}
+
+.navbar {
+    position: fixed ;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+
+.container-fluid {
+    padding: 0 150px;
+}
+
+#vertical-button {
+    text-align: center;
+    /* -moz-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg); */
+    -webkit-transform:rotate(-90deg);
+    transform-origin: bottom right;
+    position: fixed;
+    right: 0px;
+    bottom: 232px
+}
+
+/* comment */
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: xx-large;
+    color: #FFD600;
+    cursor: pointer;
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important;
+}
+
+.rating>input:checked~label:before {
+    opacity: 1;
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}

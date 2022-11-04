@@ -62,7 +62,9 @@ CREATE TABLE `feedback_rateds` (
 
 LOCK TABLES `feedback_rateds` WRITE;
 /*!40000 ALTER TABLE `feedback_rateds` DISABLE KEYS */;
-INSERT INTO `feedback_rateds` VALUES (1,5,'rất tốt và ổn áp','admin'),(2,4,'cũng được','admin'),(3,5,'dung tam duoc','admin'),(4,5,'dung tam duoc','admin'),(5,5,'dung tam duoc','admin'),(6,5,'he thong dung qua la tot luon','user'),(7,5,'he thong dung qua la tot luon','user'),(8,1,'hệ thống cùi vl','admin');
+INSERT INTO `feedback_rateds` VALUES (1,4,'Ý tưởng của hệ thống khá hay, có thể áp dụng vào thực tế. Tuy nhiên hệ thống còn đơn giản, ít chức năng','user1'),(2,4,'Nhìn chung hệ thống cũng được, cần phát triển thêm một số chức năng như gợi ý từ khoá khi nhập vào thanh tìm kiếm ','user1'),(3,4,'Giao diện hệ thống đơn giản. Cần gợi ý cho người dùng bằng một số câu hỏi thay vì chỉ nhập từ khoá đơn giản như bây giờ. Nhìn chung ý tưởng của hệ thống là tốt','user2'),(4,5,'Tuyệt vời, nên phát triển hoàn thiện để áp dụng thực tế','user2'),
+      (5,4,'Cũng được nhưng hệ thống vẫn còn quá đơn giản. Hy vọng phát triển thêm các tính năng khác để sử dụng được','user1'),(6,4,'Cần nhận thêm một số thông tin như tuổi, giới tính nữa. Nếu phát triển thêm thì tính ứng dụng cũng cao đấy','user'),(7,5,'he thong dung qua la tot luon','user'),(8,1,'Không có tính ứng dụng gì cả. Tìm triệu chứng trên google có khi còn nhanh hơn','user1'),(9,5,'Đánh giá cao ý tưởng của hệ thống ','user1'),(10,1,'Quá đơn giản, ý tưởng thì có nhưng mà thực hiện chưa tới, tương tác người dùng hoàn toàn bị động. cần phát triển theo hướng giống chatbot tư vấn thì tốt hơn','user'),(11,3,'Tạm được, không có gì đặc sắc lắm','admin'),
+      (12,4,'','user'),(13,2,'Hệ thống hơi khó dùng, còn nhiều chỗ đánh giá chưa chính xác','admin'),(14,4,'','user'),(15,3,'Ít chức năng, lời khuyên hơi chung chung chưa giải quyết triệt để vấn đề đang gặp phải','admin');
 /*!40000 ALTER TABLE `feedback_rateds` ENABLE KEYS */;
 UNLOCK TABLES;
 

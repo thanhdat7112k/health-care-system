@@ -26,7 +26,7 @@ public class UserController {
 
         // tao moi tai khoan
         userAccount.setRole("user");
-//        userAccountRepository.save(userAccount);
+        userAccountRepository.save(userAccount);
         return ResponseEntity.ok("Create account success");
     }
     // xu ly dang nhap

@@ -15,7 +15,8 @@ class DiseaseService
 
     public function store($request)
     {
-        if(diseases::where("disease_name",'like','%'.$request->disease_name.'%')) return false;
+        $data = diseases::where('disease_name','like','%'.$request->disease_name.'%')->count();
+        if($data) return false;
 
         return diseases::create($request->only('disease_name', 'description'));
     }

@@ -3,6 +3,7 @@
 namespace App\Services\Domains\Admin;
 
 use App\Models\user_accounts;
+use App\Models\medical_histories;
 use Illuminate\Support\Facades\Hash;
 use App\Events\CustomerCreatedEvent;
 use Illuminate\Support\Str;
@@ -54,6 +55,7 @@ class CustomerService
     {
         $user = $this->getUserById($id);
         $user->delete();
+        medical_histories::where('username', 'like', '%'.$user->username.'%')->delete();
 
         return $user->destroy($id);
     }

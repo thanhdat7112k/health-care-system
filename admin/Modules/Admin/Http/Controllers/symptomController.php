@@ -56,6 +56,7 @@ class symptomController extends BaseAdminController
     public function store(symptomRequest $request)
     {
         $data = $this->symptomService->store($request);
+
         if($data == false) return redirect()->route('admin.symptoms.create')
         ->with('error_message', 'Bệnh không tồn tai trong hệ thống');
 

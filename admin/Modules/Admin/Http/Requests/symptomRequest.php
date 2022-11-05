@@ -35,13 +35,13 @@ class symptomRequest extends BaseAdminRequest
             case 'POST':
                 return $rules = [
                     'symptom_name' => 'required|max:255',
-                    'weight' => 'nullable|max:255',
+                    'weight' => 'nullable|numeric|max:10|min:1',
                     'disease_name'   => 'required|max:255',
                 ];
             case 'PUT':
                 return $rules = [
                     'symptom_name' => 'required|max:255',
-                    'weight' => 'nullable|max:255',
+                    'weight' => 'nullable|numeric|max:10|min:1',
                     'disease_name'   => 'required|max:255',
                 ];
         }

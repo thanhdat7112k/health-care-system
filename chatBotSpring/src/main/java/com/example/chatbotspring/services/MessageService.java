@@ -49,7 +49,7 @@ public class MessageService {
             return "Không thể tư vấn từ các triệu chứng trên";
 
         StringBuilder result = new StringBuilder("Từ các triệu chứng bạn gặp phải, chúng tôi chẩn đoán bạn đang bị: ");
-        result.append(diseaseName.toLowerCase()).append(". Giải pháp cho vấn đề này là:");
+        result.append(diseaseName.toLowerCase()).append(". Lời khuyên: ");
         List<Recommendation> recommendationList = recommendationRepository.findByDiseaseName(diseaseName);
 
         for (Recommendation recommendation : recommendationList) {

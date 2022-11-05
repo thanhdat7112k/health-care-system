@@ -15,7 +15,8 @@ class recommendationService
 
     public function store($request)
     {
-        if(!diseases::where("disease_name",'like','%'.$request->disease_name.'%')) return false;
+        if(!diseases::where('disease_name','like','%'.$request->disease_name.'%')->count()) return false;
+
         return recommendations::create([
             'recommendation' => $request->recommendation,
             'disease_name' => $request->disease_name

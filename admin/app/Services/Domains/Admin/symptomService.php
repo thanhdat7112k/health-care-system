@@ -14,7 +14,8 @@ class symptomService
 
     public function store($request)
     {
-        if(!diseases::where("disease_name",'like','%'.$request->disease_name.'%')) return false;
+        $check = diseases::where('disease_name','like','%'.$request->disease_name.'%')->count();
+        if(!$check) return false;
 
         return symptoms::create([
             'symptom_name' => $request->symptom_name,

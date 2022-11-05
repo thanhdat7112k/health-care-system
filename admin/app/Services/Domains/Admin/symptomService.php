@@ -3,6 +3,7 @@
 namespace App\Services\Domains\Admin;
 
 use App\Models\symptoms;
+use App\Models\diseases;
 
 class symptomService
 {
@@ -13,6 +14,8 @@ class symptomService
 
     public function store($request)
     {
+        if(!diseases::where("disease_name",'like','%'.$request->disease_name.'%')) return false;
+
         return symptoms::create([
             'symptom_name' => $request->symptom_name,
             'weight' => $request->weight,

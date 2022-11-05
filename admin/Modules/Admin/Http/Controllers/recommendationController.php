@@ -56,7 +56,9 @@ class recommendationController extends BaseAdminController
      */
     public function store(recommendationRequest $request)
     {
-        $this->recommendationService->store($request);
+        $data = $this->recommendationService->store($request);
+        if($data == false) return redirect()->route('admin.recommendations.create')
+        ->with('error_message', 'Bệnh không tồn tai trong hệ thống');
 
         return redirect()->route('admin.recommendations.index')
             ->with('success_message', trans('messages.create_success'));

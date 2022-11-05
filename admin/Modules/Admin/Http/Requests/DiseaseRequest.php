@@ -30,18 +30,18 @@ class DiseaseRequest extends BaseAdminRequest
             case 'GET':
                 return $rules = [
                     'disease_name'   => 'nullable|max:255',
-                    'description' => 'nullable|max:500',
+                    'description' => 'nullable|max:5000',
                 ];
             case 'POST':
                 return $rules = [
                     'disease_name'   => 'required|max:255',
-                    'description' => 'required|max:500',
+                    'description' => 'required|max:5000',
                 ];
             case 'PUT':
                 $diseaseID = request()->route('disease');
                 return $rules = [
                     'disease_name'   => 'required|max:255',
-                    'description' => 'required|max:500',
+                    'description' => 'required|max:5000',
                 ];
             case 'DELETE':
                 return $rules = [];

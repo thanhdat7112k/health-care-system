@@ -3,6 +3,7 @@
 namespace App\Services\Domains\Admin;
 
 use App\Models\recommendations;
+use App\Models\diseases;
 
 
 class recommendationService
@@ -14,6 +15,7 @@ class recommendationService
 
     public function store($request)
     {
+        if(!diseases::where("disease_name",'like','%'.$request->disease_name.'%')) return false;
         return recommendations::create([
             'recommendation' => $request->recommendation,
             'disease_name' => $request->disease_name

@@ -41,7 +41,10 @@ class DiseaseController extends BaseAdminController
 
     public function store(DiseaseRequest $request)
     {
-        $this->diseaseService->store($request);
+        $data = $this->diseaseService->store($request);
+
+        if($data == false) return redirect()->route('admin.diseases.create')
+        ->with('error_message', 'Bệnh đã tồn tại trong cơ hệ thống');
 
         return redirect()->route('admin.diseases.index')
             ->with('success_message', trans('messages.create_success'));
@@ -80,7 +83,7 @@ class DiseaseController extends BaseAdminController
     public function destroy($id)
     {
         $this->diseaseService->destroy($id);
-        
+
 
         return redirect()->route('admin.diseases.index')
             ->with('success_message', trans('messages.delete_success'));

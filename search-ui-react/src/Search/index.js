@@ -9,6 +9,7 @@ import { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../image/logo1.jpg'
 import tutorial from '../image/tutorial2.png'
+import $ from 'jquery';
 
 function Search() {
     const messageRef = useRef()
@@ -157,10 +158,9 @@ function Search() {
                                 <b>5. Các từ khoá triệu chứng tham khảo</b>
                                 <br/>
                                 Sau đây là những từ khoá bạn có thể tham khảo để nhập vào thanh tìm kiếm để hệ thống cho ra kết quả chẩn đoán tốt nhất:
-                                Cảm thấy khó chịu; đau đầu; đau phía sau mắt; ho; sốt cao; buồn nôn; chóng mặt, loạng choạng;...
+                                Cảm thấy khó chịu; đau đầu; đau phía sau mắt; ho; sốt cao; buồn nôn; chóng mặt, loạng choạng;... hoặc tham khảo thêm 
+                                <a href="https://docs.google.com/document/d/17s_1tpKlWSauhSwJ14mGYy-ByX5SeoXG/edit?usp=sharing&ouid=100881872558777202902&rtpof=true&sd=true"> tại đây</a>
                             </div>
-                        </div>
-                        <div className="rating">
                         </div>
                         <div className="modal-footer">
                             <h5>Đọc kĩ hướng dẫn trước khi sử dụng</h5>
